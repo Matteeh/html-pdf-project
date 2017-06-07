@@ -1,2 +1,6 @@
 node_modules
-tmp
+# exclude everything
+tmp/*
+
+!.gitignore
+!testtest.jpg
