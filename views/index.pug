@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div(class="container")
+    h1= title
+    h3 Welcome to #{title}
+    form( ref="uploadForm" id="uploadForm" action="/upload" method="post" encType="multipart/form-data")
+      p Submit the HTML file you want converted, it will prompt a download window when ready.
+      br
+      label(for="input-field") Get your file.html here.
+      br
+      input(type="file" name="sampleHtml" id="input-field")
+      br
+      label Write your pdf options here, if empty the pdf will be created with default settings.
+      br
+      label Example of base file path; base: 'file:///sandbox/htmlPdfConverter/tmp/'
+      br
+      textarea(id="options-input" type="text" name="options" cols="30" row="10") 
+      br
+      input(type="file" id="dropbox" multiple accept="image/*" onchange="handleFiles(this.files)")
+      label(for="dropbox" style="border-style:solid;padding:20px;margin:50px;border-radius:3px;display:none;") Drop image files here.
+      br
+      button(type="submit" id="convert-button") Convert

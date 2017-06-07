@@ -1,0 +1,52 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container{
+  width: 100%;
+  padding: 0 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#input-field{
+  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-right: -160px;
+}
+
+#dropbox{
+    background-color: none;
+    display: none;
+}
+#dropbox-frame{
+    padding: 30px;
+    border-style: solid;
+    display: none;
+}
+#convert-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 10pt;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: darkseagreen;
+  color: whitesmoke;
+  border-style: none;
+  border-radius: 4px;
+}
+
+#convert-button:hover{
+  margin-top: 31px;
+  background-color: darkseagreen;
+  filter: drop-shadow(2px 2px 1px #d3d3d3);
+}
+
+#options-input{
+    height: 200px;
+}
