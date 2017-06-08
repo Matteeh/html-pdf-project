@@ -4,3 +4,4 @@ tmp/*
 
 !.gitignore
 !testtest.jpg
+!test.html
